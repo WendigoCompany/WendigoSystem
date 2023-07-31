@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/WendigoSystem/static/js/main.d108488f.js",
+    "main.js": "/WendigoSystem/static/js/main.fc8cc239.js",
     "index.html": "/WendigoSystem/index.html",
-    "main.d108488f.js.map": "/WendigoSystem/static/js/main.d108488f.js.map"
+    "main.fc8cc239.js.map": "/WendigoSystem/static/js/main.fc8cc239.js.map"
   },
   "entrypoints": [
-    "static/js/main.d108488f.js"
+    "static/js/main.fc8cc239.js"
   ]
 }
