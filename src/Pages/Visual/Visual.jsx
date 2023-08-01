@@ -1,10 +1,10 @@
 import { useRezise } from "../../Context/Mobile";
 import { get_gallery, get_img } from "../../DB/db_manager";
 import { gbid } from "../../functions/htmlSelectors";
-
-
+import "./css/manifiest.css";
 
 let i = 0;
+let double_touch = true;
 
 export default function Visual() {
   const gallery = get_gallery("visual");
@@ -36,7 +36,7 @@ export default function Visual() {
     let img;
     if (direction === "+") {
       i += 1;
-      if ((gallery.gallery.length - 1 ) < i) {
+      if (gallery.gallery.length - 1 < i) {
         i = 0;
       }
     } else if (direction === "-") {
@@ -65,30 +65,33 @@ export default function Visual() {
         }}
         onTouchStart={(e) => {
           touch = e.changedTouches[0].screenX;
+          // if (e.touches.length > 1) {
+          //   double_touch = true;
+          // } else {
+          //   double_touch = false;
+          // }
+          double_touch = e.touches.length > 1;
         }}
+        // WORK IN ZOOM IN ZOOM OUT
         onTouchEnd={(e) => {
           if (
             touch > e.changedTouches[0].screenX &&
-            touch - e.changedTouches[0].screenX > 100
+            touch - e.changedTouches[0].screenX > 200 &&
+            !double_touch
           ) {
             changeImg("+");
           } else if (
             touch < e.changedTouches[0].screenX &&
-            e.changedTouches[0].screenX - touch > 100
+            e.changedTouches[0].screenX - touch > 200 &&
+            !double_touch
           ) {
             changeImg("-");
           }
         }}
         src={img_url}
-        className={`img img-${device}`}
-        style={{
-          width: "100%",
-          transition: "margin .4s, opacity .5s",
-        }}
+        className={`img img-${device} dbl-tap-zoom`}
         alt=""
       />
     </div>
   );
 }
-
-

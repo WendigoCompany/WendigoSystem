@@ -25,10 +25,15 @@ export default function App() {
               path="/"
             ></Route>
 
-            <Route strict exact path="/main:id"></Route>
+            <Route strict exact element={<Main></Main>} path="/main:id"></Route>
             <Route strict exact element={<Main></Main>} path="/main"></Route>
 
-            <Route strict exact path="/visual:id"></Route>
+            <Route
+              strict
+              exact
+              element={<Visual></Visual>}
+              path="/visual:id"
+            ></Route>
             <Route
               strict
               exact

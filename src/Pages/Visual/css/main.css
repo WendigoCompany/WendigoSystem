@@ -1,0 +1,19 @@
+.img {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.img-desk {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transition: margin .4s, opacity .5s;
+}
+
+.dbl-tap-zoom {
+    touch-action: double-tap-zoom;
+  }

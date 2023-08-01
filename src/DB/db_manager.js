@@ -8,6 +8,9 @@ export const move_to = (page) => {
   let url = github_url + router_code + page;
 
   window.location.href = url;
+  setTimeout(() => {
+    window.location.reload();
+  }, 500);
 };
 
 const stucture_data = () => {
