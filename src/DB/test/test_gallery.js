@@ -1,3 +1,4 @@
+import { gDrive_logo, mega_logo } from "../logos";
 import imgs from "./gallery.json";
 
 const basic_url =
@@ -8,4 +9,14 @@ const basic_url =
 export const gallery = {
   basic_url: basic_url,
   gallery: imgs,
+  links : [
+  {
+    link : '',
+    logo : mega_logo
+  },
+  {
+    link : '',
+    logo : gDrive_logo
+  }    
+  ]
 };
