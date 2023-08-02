@@ -12,6 +12,30 @@ export default function Visual() {
   const device = useRezise();
   let touch;
 
+  let key_stoper = false;
+
+  window.onkeydown = (e) => {
+    if(!key_stoper && window.location.href.includes('visual')){
+      switch(e.key.toLowerCase()){
+        case "arrowleft":
+          case "a":
+          changeImg("-");
+          break;
+          case "arrowright":
+            case "d":
+            changeImg("+");
+            break;
+      }
+      
+      
+
+      key_stoper = true;
+      setTimeout(() => {
+        key_stoper = false;
+      }, 300);
+    }
+  };
+
   const changeAnimation = (img) => {
     const int = setInterval(() => {
       try {

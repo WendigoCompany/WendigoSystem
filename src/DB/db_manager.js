@@ -13,6 +13,15 @@ export const move_to = (page) => {
   }, 500);
 };
 
+export const go_to_gallery = (page) => {
+  let url = github_url + router_code + page;
+  window.open(url, '_blank');
+  // window.location.href = url;
+  // setTimeout(() => {
+  //   window.location.reload();
+  // }, 500);
+};
+
 const stucture_data = () => {
   const db = [];
   db.push({
@@ -32,7 +41,8 @@ export default function manager_gallery(id) {
   } else {
     const gal_found = db.filter((gal) => gal.id === id)[0];
     if (gal_found !== undefined) {
-      move_to(`visual?id=${id}`);
+      // move_to(`visual?id=${id}`);
+      go_to_gallery(`visual?id=${id}`);
     } else {
       move_to("error");
     }

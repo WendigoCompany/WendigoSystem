@@ -4,6 +4,15 @@
 
 }
 
+.img-mob {
+    position: fixed;
+    right: -100%;
+    width: 130vh;
+    bottom: 0;
+    rotate: 90deg;
+    transition: margin .4s, opacity .5s;
+}
+
 
 
 .img-desk {
@@ -16,4 +25,5 @@
 
 .dbl-tap-zoom {
     touch-action: double-tap-zoom;
-  }
+}
+

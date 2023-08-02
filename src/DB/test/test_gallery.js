@@ -11,11 +11,11 @@ export const gallery = {
   gallery: imgs,
   links : [
   {
-    link : '',
+    link : 'https://mega.io/es/',
     logo : mega_logo
   },
   {
-    link : '',
+    link : 'https://www.google.com/intl/es/drive/',
     logo : gDrive_logo
   }    
   ]
