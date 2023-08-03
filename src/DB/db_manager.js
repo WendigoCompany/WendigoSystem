@@ -1,6 +1,7 @@
 import { github_url } from "../App";
 import { getParams } from "../functions/Params";
 import { gallery as test_gallery } from "./test/test_gallery";
+import { gallery as Resting_on_the_hot_springs } from "./Resting on the hot springs/gallery";
 
 const router_code = process.env.NODE_ENV === "development" ? "" : "#/";
 
@@ -27,6 +28,11 @@ const stucture_data = () => {
   db.push({
     id: "test",
     gallery: test_gallery,
+  });
+
+  db.push({
+    id: "ga1",
+    gallery: Resting_on_the_hot_springs,
   });
 
   return db;
@@ -59,3 +65,4 @@ export const get_gallery = (page) => {
 export const get_img = (gallery, i) => {
   return gallery.basic_url + gallery.gallery[i];
 };
+

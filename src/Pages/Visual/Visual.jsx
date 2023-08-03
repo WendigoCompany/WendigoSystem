@@ -12,6 +12,8 @@ export default function Visual() {
   const device = useRezise();
   let touch;
 
+
+
   let key_stoper = false;
 
   window.onkeydown = (e) => {
@@ -77,6 +79,7 @@ export default function Visual() {
     <div>
       <img
         id="image"
+        referrerPolicy="no-referrer"
         onDragStart={(e) => {
           touch = e.clientX;
         }}

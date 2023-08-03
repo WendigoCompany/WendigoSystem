@@ -3,6 +3,7 @@ import ReziseProvider from "./Context/Mobile";
 import Main from "./Pages/Main/Main";
 import Visual from "./Pages/Visual/Visual";
 import Error from "./Pages/Error/Error";
+import Disclaim from "./Pages/Disclaim/Disclaim";
 
 const Router =
   process.env.NODE_ENV === "development" ? BrowserRouter : HashRouter;
@@ -18,10 +19,16 @@ export default function App() {
       <ReziseProvider>
         <Router>
           <Routes>
+          <Route
+              strict
+              exact
+              element={<Disclaim></Disclaim>}
+              path="/:id"
+            ></Route>
             <Route
               strict
               exact
-              element={<h1>ESTO ES UN JUEGO COCHINOTE!</h1>}
+              element={<Disclaim></Disclaim>}
               path="/"
             ></Route>
 

@@ -34,7 +34,7 @@ export default function Main() {
       </div>
 
       <div className={`center`}>
-        <h3 className={`subt subt-dowl-${device}`}>DOWLOAD LINKS:</h3>
+        <h3 className={`subt subt-dowl-${device}`}>HD DOWLOAD LINKS:</h3>
       </div>
 
       <div className={`center`}>
