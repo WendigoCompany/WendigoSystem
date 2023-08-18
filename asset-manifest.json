@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/WendigoSystem/static/css/main.dd5de360.css",
+    "main.js": "/WendigoSystem/static/js/main.0a30f964.js",
+    "index.html": "/WendigoSystem/index.html",
+    "main.dd5de360.css.map": "/WendigoSystem/static/css/main.dd5de360.css.map",
+    "main.0a30f964.js.map": "/WendigoSystem/static/js/main.0a30f964.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd5de360.css",
+    "static/js/main.0a30f964.js"
+  ]
+}
