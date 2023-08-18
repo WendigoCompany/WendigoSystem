@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/WendigoSystem/static/css/main.1b15043e.css",
-    "main.js": "/WendigoSystem/static/js/main.64fd78b0.js",
+    "main.css": "/WendigoSystem/static/css/main.dd5de360.css",
+    "main.js": "/WendigoSystem/static/js/main.cb7d38ec.js",
     "index.html": "/WendigoSystem/index.html",
-    "main.1b15043e.css.map": "/WendigoSystem/static/css/main.1b15043e.css.map",
-    "main.64fd78b0.js.map": "/WendigoSystem/static/js/main.64fd78b0.js.map"
+    "main.dd5de360.css.map": "/WendigoSystem/static/css/main.dd5de360.css.map",
+    "main.cb7d38ec.js.map": "/WendigoSystem/static/js/main.cb7d38ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b15043e.css",
-    "static/js/main.64fd78b0.js"
+    "static/css/main.dd5de360.css",
+    "static/js/main.cb7d38ec.js"
   ]
 }
