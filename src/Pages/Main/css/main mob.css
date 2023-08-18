@@ -1,0 +1,29 @@
+.background-mob {
+    width: 42vh;
+    top: 30%;
+}
+
+.main-title-mob {
+    font-size: 6vh;
+}
+.btn-mob{
+    width: 100%;
+    font-size: 4vh;
+}
+
+
+.btn-acc-gall-mob{
+    color: #000000;
+    background: radial-gradient(circle, rgba(129,233,100,1) 0%, rgba(68,129,51,1) 100%);
+}
+
+.subt-dowl-mob {
+    font-size: 4vh;
+}
+
+
+.comp-logo-mob {
+    width: 20vh;
+    margin: 3vh 0vh 3vh 0vh;
+
+}

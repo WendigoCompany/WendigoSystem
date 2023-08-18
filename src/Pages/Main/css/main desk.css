@@ -1,0 +1,48 @@
+.background-desk{
+    width:50vw;
+    left: 25%;
+    top: 5%;
+}
+
+.main-title-desk{
+    font-size: 4vw;
+}
+
+
+.btn-acc-gall-desk{
+    width: 60%;
+    font-size: 3vw;
+    cursor: pointer;
+    color: #000000;
+    background: radial-gradient(circle, rgb(109, 192, 86) 0%, rgba(68,129,51,1) 100%);    
+    transition: color .5s,text-shadow .5s;
+    border-radius: 2%;
+}
+
+
+.btn-acc-gall-desk:hover{
+    color: #6ee0af;
+    text-shadow: #000000 3px 5px 2px, 2px 2px 2px #000000, 2px 2px 2px #000000;
+
+}
+
+
+.comp-logo-desk {
+    display: inline-block;
+    width: 15vw;
+    margin: 3vh 10vw 3vh 10vw;
+    cursor: pointer;
+    opacity: .3;
+    transition: opacity .3s;
+
+}
+
+.comp-logo-desk:hover {
+    opacity: .9
+}
+
+
+.subt-dowl-desk {
+    font-size: 3.5vw;
+}
+

@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(90deg,
+            rgba(42, 41, 41, 1) 0%,
+            rgba(34, 34, 34, 1) 10%,
+            rgba(32, 32, 32, 1) 20%,
+            rgba(29, 29, 29, 1) 30%,
+            rgba(0, 0, 0, 1) 50%,
+            rgba(29, 29, 29, 1) 70%,
+            rgba(32, 32, 32, 1) 80%,
+            rgba(34, 34, 34, 1) 90%,
+            rgba(42, 41, 41, 1) 100%);
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.background {
+    position: fixed;
+    z-index: -1000;
+    opacity: .2;
+}
+
+
+
+
+.main-title {
+    font-family: 'Tektur', cursive;
+    color: #a1a1a1;
+    text-shadow: #474747 3px 5px 2px, 2px 2px 2px rgba(206, 89, 55, 0), 2px 2px 2px rgba(206, 89, 55, 0), #474747 3px 5px 2px, 2px 2px 2px rgba(206, 89, 55, 0), 2px 2px 2px rgba(206, 89, 55, 0), #474747 3px 5px 2px, 2px 2px 2px rgba(206, 89, 55, 0), 2px 2px 2px rgba(206, 89, 55, 0), ;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5%;
+    font-family: 'Tektur', cursive;
+}
+
+
+
+
+.subt {
+    color: #69a05f;
+    text-shadow: #000000 3px 5px 2px, 2px 2px 2px #000000, 2px 2px 2px #000000;
+    font-family: 'Tektur', cursive;
+}
+
+.shortc-cont {
+    display: inline-block;
+    position: absolute;
+    padding: .5vh;
+    border: .5vh dashed #cc27276f;
+    bottom: 0px;
+    right: 0px; 
+    font-family: 'Tektur', cursive;
+    color: #7b7b7b;
+    text-align: center;
+    font-size: 1.5vh;
+    transition: border .5s, color .5s,  font-size .5s;
+}
+
+.shortc-cont:hover{
+    border: .5vh dashed #cc2727b7;
+    font-size: 2.5vh;
+    color: #c3c3c3;
+}
